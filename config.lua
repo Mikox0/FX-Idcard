@@ -117,6 +117,37 @@ Config.Locale = {
         ["nojob"] = "You have no authorisation!",
         ["errorcommand"] = "Incorrect usage. use this way /deleteidcard id",
         ["noprintphoto"] = "You do not have a passport photo !",
+    },
+    ["pl"] = {
+        --- PROMPTS ---
+        ["promptitle"] = "Fotograf",
+        ["promptitle2"] = "System Dowodów Tożsamości",
+        ["takephoto"] = "Zrób zdjęcie",
+        ["printphoto"] = "Wydrukuj zdjęcie",
+        ["exit"] = "Wyjdź",
+        ["camUp"] = "Góra",
+        ["camDown"] = "Dół",
+        ["camLeft"] = "Lewo",
+        ["camRight"] = "Prawo",
+        ["camForward"] = "Do przodu",
+        ["camBack"] = "Do tyłu",
+        ["promptitle3"] = "Fałszywy dowód tożsamości",
+        ["takeidcard"] = "Weź dowód tożsamości",
+
+        --- NOTIFY ---
+        ["noimg"] = "Nie wprowadzono ~COLOR_YELLOW~linku do zdjęcia~COLOR_WHITE~!",
+        ["successprint"] = "Zdjęcie zostało dodane do ekwipunku. Możesz je zobaczyć poprzez ~COLOR_YELLOW~podwójne kliknięcie",
+        ["addIdCard"] = "Dowód tożsamości został dodany do ekwipunku. Możesz go zobaczyć poprzez ~COLOR_YELLOW~podwójne kliknięcie",
+        ["errorprint"] = "Drukowanie ~COLOR_RED~nie powiodło się~COLOR_WHITE~!",
+        ["erroridcard"] = "Tworzenie dowodu tożsamości ~COLOR_RED~nie powiodło się~COLOR_WHITE~!",
+        ["photodesc"] = "Zdjęcie do dowodu",
+        ["nodata"] = "Nie posiadasz tożsamości!",
+        ["nomoney"] = "Nie masz wystarczającej ilości pieniędzy. Opłata: ~COLOR_YELLOW~${money}",
+        ["successidcard"] = "Twój dowód tożsamości został wystawiony. Możesz teraz go okazywać",
+        ["useitem"] = "Użyj zdjęcia z ekwipunku w ciągu ~COLOR_YELLOW~${time} ~COLOR_WHITE~sekund",
+        ["alreadyidcard"] = "Masz już dowód tożsamości. Potrzebujesz zgody, aby go zmienić",
+        ["idcarddesc"] = "Tożsamość ${name}</br>Numer identyfikacyjny: <span style=color:yellow;>${charid}",
+        ["noprintphoto"] = "Nie posiadasz zdjęcia paszportowego!",
     }
 }
 Config.HideHud = function()
@@ -334,4 +365,5 @@ function Locale(key, subs)
   end
   translate = tostring(translate):gsub("%%%%", "%%")
   return tostring(translate)
+
 end
